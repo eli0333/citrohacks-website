@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>opportunities finder</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<!-- Google Fonts CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+</head>
+
+<body class="opportunitiesBody">
+	<script src="script.js">
+	</script>
+
+	<!-- Navigation Bar -->
+	<div class="header">
+		<br>
+      <!-- Website's Logo -->
+			<img src = "" alt = "" class = "website-logo">
+
+      <!-- Navigation Bar -->
+			<ul id="co">
+				<li id="link1">
+          <a href="index.html" class = "home-link" id = "link"> Home </a>
+				</li>
+				<li id="link2">
+          <a href="opportunities.html" class = "opportunity-link" id = "link"> Opportunities Finder </a>
+				</li>
+				<li id="link3">
+          <a href="scholarships.html" class = "scholarship-link" id = "link"> Scholarship Finder </a>
+				</li>
+				<li id="link4">
+					<a href="testprep.html" class = "standardized-tests-link" id = "link"> Standardized Test Prep </a>
+				</li>
+        <li id = "link5">
+          <a href="postpage.html" class = "post-link" id = "link"> Post </a>
+        </li>
+			</ul>
+	</div>
+
+<!-- Filter Tab -->
+    <div class="filtertab">
+      <form action="/action_page.php">
+      <h2>Edit Preferences</h2>
+      <h4>Time zone</h4>
+        <input type="checkbox" id="time1" name="time1" value="time1" data-category="tz1">
+        <label for="time1" onclick="filterList('tz1')">Timezone 1</label>
+        <br>
+        <input type="checkbox" id="time2" name="time2" value="time2" data-category="tz2">
+        <label for="time2" onclick="filterList('tz2')">Timezone 2</label>
+        <br>
+
+      <h4>Field of interest</h4>
+
+        <form class="selectfield">
+          <label for="field">Select field:</label>
+          <select name="field" id="field" placeholder="Select">
+            <option value="" style="color:gray;">Choose an option</option>
+            <option value="">Arts & Humanities</option>
+            <option value="">Business Management</option>
+            <option value="">Computer Science</option>
+            <option value="">Engineering</option>
+          </select>
+        </form>
+
+      <h4>Entry Cost</h4>
+        <input type="checkbox" id="free" name="free" value="free">
+        <label for="free">Free</label>
+        <br>
+        <input type="checkbox" id="lowcost" name="lowcost" value="low">
+        <label for="lowcost">Low cost</label>
+        <br>
+        <input type="checkbox" id="medcost" name="medcost" value="medium">
+        <label for="mediumcost">Medium cost</label>
+        <br>
+        <input type="checkbox" id="highcost" name="highcost" value="high">
+        <label for="highcost">High cost</label>
+        <br>
+        <br>
+
+      <input type="submit" value="Filter results">
+
+      </form>
+    </div>
+
+<!-- Extracurricular Searcher -->
+    <h1 class="mainhead">Find opportunities for you!</h1>
+    <div class="selectType">
+      <ul>
+        <li> All </li>
+        <li> Internships/Jobs </li>
+        <li> Competitions </li>
+      </ul>
+    </div>
+    
+    <div class = "eclist">
+
+        <!-- Internship extracurricular, timezone is MSK -->
+        <div class = "filter" id="ec1" data-category="msk">
+
+            <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">Luxoft</h1>
+
+                  <h3><i class="bi bi-briefcase-fill"></i> Student mentor </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> Work at home </h3>
+               
+              </div>
+
+            </div>
+
+            <ul>
+                <li class="ecinfo">Work closely with Build and Release team to support, enhance, and expand company-wide build and deployment systems and infrastructure</li>
+                <li class="ecinfo">Work with the users to troubleshoot and address issues for a variety of software and versions</li>
+                <li class="ecinfo">Develop documentation and build tools to facilitate user experience</li>
+            </ul>
+
+            <a href="https://career.luxoft.com/job/build-and-release-engineer/284551/?utm_source=linkedin-wrapping">
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+        </div>
+
+        <!-- Internship extracurricular, timezone is IST-->
+        <div class = "filter" id="ec2" data-category="ist">
+
+            <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">All India Council for Technical Education</h1>
+
+                  <h3><i class="bi bi-briefcase-fill"></i> Paid Intern </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> India </h3>
+              </div>
+
+            </div>
+
+            <ul>
+                <li class="ecinfo">Interning under National level council technical education with a broad range of potential interests: social justice and empowerment, aerospace, oil and gas, banks, corporate, etc. </li>
+            </ul>
+
+            <a href="https://internship.aicte-india.org/">
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+          </div>
+
+
+        <!-- Internship extracurricular, timezone is IST-->
+        <div class = "filter" id="ec3" data-category="ist">
+
+          <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">TIAA Global Business Services India</h1>
+
+                  <h3><i class="bi bi-briefcase-fill"></i> Business Intern </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> Mumbai, India </h3>
+              </div>
+
+            </div>
+
+            <ul>
+                <li class="ecinfo">Participates in and supports the operational activities of a TIAA business unit.</li>
+            </ul>
+
+            <a href="https://careers.tiaa.org/global/en/job/R210500235/Intern ">
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+          </div>
+
+
+          <!-- Internship extracurricular, unlabled timezone-->
+          <div class = "filter" id="ec4" data-category="insertTimezone">
+
+          <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">Intership Company Name 4</h1>
+
+                  <h3><i class="bi bi-briefcase-fill"></i> Role </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> Location </h3>
+              </div>
+
+            </div>
+
+            <ul>
+                <li class="ecinfo">(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li class="ecinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li class="ecinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+
+            <a href="https://careers.tiaa.org/global/en/job/R210500235/Intern ">
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+          </div>
+
+          <!-- Contest extracurricular, unlabled timezone-->
+          <div class = "filter" id="ec5" data-category="insertTimezone">
+
+          <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">Contest 1</h1>
+
+                  <h3><i class="bi bi-calendar-fill"></i> Date/s of contest </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> Location</h3>
+              </div>
+
+            </div>
+            
+                <p>(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href=#>
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+          </div>
+
+          <!-- Contest extracurricular, unlabled timezone-->
+          <div class = "filter" id="ec6" data-category="insertTimezone">
+
+          <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">Contest 2</h1>
+
+                  <h3><i class="bi bi-calendar-fill"></i> Date/s of contest </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> Location</h3>
+              </div>
+
+            </div>
+
+                <p>(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href=#>
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+          </div>
+
+
+          <!-- Contest extracurricular, unlabled timezone-->
+          <div class = "filter" id="ec7" data-category="insertTimezone">
+
+          <div class="ecContainer">
+
+              <div>
+                <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+              </div>
+
+              <div>
+                <h1 class = "ecname">Contest 3</h1>
+
+                  <h3><i class="bi bi-calendar-fill"></i> Date/s of contest </h3>
+                  <h3><i class="bi bi-geo-alt-fill"></i> Location</h3>
+              </div>
+
+            </div>
+
+                <p>(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href=#>
+            <input type="submit" value="Visit website" class="ecSubmit">
+            </a>
+
+          </div>
+
+     </div> 
+  </body>
+</html>

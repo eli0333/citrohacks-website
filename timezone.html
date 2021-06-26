@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<div class="header">
+		<br>
+      <!-- Website's Logo -->
+			<img src = "" alt = "" class = "website-logo">
+
+      <!-- Navigation Bar -->
+			<ul id="co">
+				<li id="link1">
+          <a href="index.html" class = "home-link" id = "link"> Home </a>
+				</li>
+				<li id="link2">
+          <a href="opportunities.html" class = "opportunity-link" id = "link"> Opportunities Finder </a>
+				</li>
+				<li id="link3">
+          <a href="scholarships.html" class = "scholarship-link" id = "link"> Scholarship Finder </a>
+				</li>
+				<li id="link4">
+					<a href="testprep.html" class = "standardized-tests-link" id = "link"> Standardized Test Prep </a>
+				</li>
+        <li id = "link5">
+          <a href="postpage.html" class = "post-link" id = "link"> Post </a>
+        </li>
+			</ul>
+	</div>
+<h2>Timezone offset</h2>
+
+<p>
+Click on submit button to display timezone offset in minutes
+</p><br>
+  
+<!--Call showOffset() on clicking 
+    the submit button-->
+<input type="button" value="submit" onclick="showOffset()">
+<br><br>
+<p id="time"></p>
+
+<script>
+  function showOffset() {
+    // Date object
+    var date = new Date();
+      
+    // Offset variable will store 
+    // timezone offset between 
+    // UTC and your local time   
+    var offset = date.getTimezoneOffset()/60;
+    document.getElementById("time").innerHTML = "Timezone offset: " + offset + " hours";
+  }  
+</script>
+</body>
+  
+</html>
