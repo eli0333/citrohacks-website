@@ -10,35 +10,51 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<!-- Google Fonts CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+	<style>
+		.contact-us-form {
+			margin-top: 80px;
+			margin-inline-start: 500px;
+		}
+
+		body {
+			/* background-color: #CDF0EA; */
+			background-color: #FFDEE9;
+			background-image: linear-gradient(100deg, #FFDEE9 0%, #B5FFFC 100%);
+			margin: 0px;
+			height: 100%;
+		}
+	</style>
 </head>
 
-<body>
-	<center>
-		<div class="container">
-			<h3 style="text-align: center;">Contact Form</h3>
-			<form action="/action_page.php">
-				<label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <body>
+    <div class="contact-us-form">
+      <div class="container">
+        <h3 style="text-align: center;">Contact Form</h3>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <label for="email">Last Name</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email..">
+          <label for="email">Last Name</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email..">
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-        <input type="submit" value="Submit">
-      </form>
+          <center>
+            <input type="submit" value="Submit">
+          </center>
+        </form>
+      </div>
     </div>
-  </center>
-</body>
+  </body>
 </html>
