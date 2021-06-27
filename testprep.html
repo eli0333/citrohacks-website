@@ -10,282 +10,426 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
 	<!-- Google Fonts CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+
 </head>
 
 <body class="testprepBody">
-	<script src="script.js">
-	</script>
+  <script src="script.js">
+  </script>
 
-	<!-- Navigation Bar -->
-	<div class="header">
-			<br>
+  <!-- Navigation Bar -->
+  <div class="header">
+      <br>
       <!-- Navigation Bar -->
-			<ul id="co">
+      <ul id="co">
         <li>
         <!-- Website's Logo -->
-			  <img src = "Images/placeholder.png" alt = "" class = "website-logo" style="height: 50px; width: 50px; ">
+        <a href = "index.html"><img src = "Images/logo white.png" alt = "" class = "website-logo" style="height: 40px; width: 50px; "></a>
         </li>
-				<li id="link1">
+        <li id="link1">
           <a href="index.html" class = "home-link" id = "link"> Home </a>
-				</li>
-				<li id="link2">
+        </li>
+        <li id="link2">
           <a href="opportunities.html" class = "opportunity-link" id = "link"> Opportunities Finder </a>
-				</li>
-				<li id="link3">
+        </li>
+        <li id="link3">
           <a href="scholarships.html" class = "scholarship-link" id = "link"> Scholarship Finder </a>
-				</li>
-				<li id="link4">
-					<a href="testprep.html" class = "standardized-tests-link" id = "link"> Standardized Test Prep </a>
-				</li>
+        </li>
+        <li id="link4">
+          <a href="testprep.html" class = "standardized-tests-link" id = "link"> Standardized Test Prep </a>
+        </li>
         <li id = "link5">
           <a href="postpage.html" class = "post-link" id = "link"> Post </a>
         </li>
         <li id = "link6">
           <a href="aboutus.html" class = "about" id = "link"> About Us </a>
         </li>
-			</ul>
-	</div>
-
-<div class="cardGroup">
-
-  <div class="card">
-    <img src="Images/placeholder.png" alt="Avatar" style="width:100%; length: 100px;">
-      <h2><b>SAT/ACT Prep</b></h2> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> 
-      <a href= #satInfo>
-        <input type="submit" value="See SAT/ACT review programs">
-      </a>
+      </ul>
   </div>
 
-  <div class="card">
-    <img src="Images/placeholder.png" alt="Avatar" style="width:100%; length: 100px;">
-      <h2><b>AP Prep</b></h2> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> 
-      <a href=#apInfo>
-        <input type="submit" value="See AP exam review programs">
-      </a>
-  </div>
-
-  <div class="card">
-    <img src="Images/placeholder.png" alt="Avatar" style="width:100%; length: 100px;">
-      <h2><b>IB Prep</b></h2> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> 
-      <a href=#ibInfo>
-        <input type="submit" value="See IB exam review programs">
-      </a>
-  </div>
-
+  <h1 style="text-align:center; padding-top:50px;">Find Standardized Test Prep Programs for you!</h1>
+  <div class="cardGroup">
+    <div class="card">
+      <img src="Images/SAT-ACT_logos.png" alt="Avatar" style="width:100%; length: 100px;">
+        <h2><b>SAT/ACT Prep</b></h2> 
+        <p>Find high-quality review programs for the SAT and ACT to take your college admissions process into the next level!</p> 
+        <a href= #satInfo>
+          <input type="submit" value="See SAT/ACT review programs">
+        </a>
+    </div>
+    <div class="card">
+      <img src="Images/AP_Logo.jpg" alt="Avatar" style="width:100%; length: 100px; padding-top:28px;">
+        <h2><b>AP Prep</b></h2> 
+        <p>Worried about your upcoming AP exams? Fear no more, we've got the best AP exam review programs just for you!</p> 
+        <a href=#apInfo>
+          <input type="submit" value="See AP exam review programs">
+        </a>
+    </div>
+    <div class="card">
+      <img src="Images/IB_program_logo.jpg" alt="Avatar" style="width:200px; length: 200px; display: block; margin-left: auto; margin-right: auto;">
+        <h2><b>IB Prep</b></h2> 
+        <p>Improve your skills for your next IB exams through our professional and carefully selected list of IB review programs!</p> 
+        <a href=#ibInfo>
+          <input type="submit" value="See IB exam review programs">
+        </a>
+    </div>
 </div>
-
-<br>
-<br>
-
+  </br>
+  </br>
+  <!-- SAT and ACT tests Prep -->
   <div class="testprepInfo" id="satInfo">
     <h1> SAT and ACT Prep </h1>
-
-        <div class = "program" id="satActProgram1">
-
-            <div class="programParts"> 
-              <img src="Images/placeholder.png" alt="program" class="programPic"> 
-            </div>
-
-            <div class="programParts">
-              <h2>Jamboree</h2>
-
-              <div class="labels">
-                    <ul>
-                      <li class="timezone"> Timezone </li>
-                      <li class="testType"> SAT Prep </li>
-                      <li class="testType"> ACT Prep </li>
-                    </ul>
-              </div>
-
-              <h3><b> Price: $X to $X </b></h3>
-              <h3><b> Duration: DD/MM to DD/MM </b></h3>  
-              <p> (Description of program) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-              <br>
-
-              <a href=#>
-              <input type="submit" value="View program details" style="float: right;">
-              </a>
-
-            </div>
-
+    <!-- The start of SAT PREP -->
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/Logos/jamboree.jpg" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Jamboree</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> SAT Prep </li>
+          </ul>
         </div>
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          Jamboree is the leading institute offering specialized classroom and online test prep solutions for study abroad entrance exams like GMAT, GRE, SAT, TOEFL and IELTS. Our excellent admissions counseling services have led several students to top universities of the world. We also offer a host of value added services in association with our partners.
+        </p>
+        </br>
+        <a href= "https://www.jamboreeindia.com/sat">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
 
-        <div class = "program" id="actProgram1">
-
-            <div class="programParts"> 
-              <img src="Images/placeholder.png" alt="program" class="programPic"> 
-            </div>
-
-            <div class="programParts">
-              <h2>ACT Review Program Name 1</h2>
-
-              <div class="labels">
-                    <ul>
-                      <li class="timezone"> Timezone </li>
-                      <li class="testType"> ACT Prep </li>
-                    </ul>
-              </div>
-
-              <h3><b> Price: $X to $X </b></h3>
-              <h3><b> Duration: DD/MM to DD/MM </b></h3>  
-              <p> (Description of program) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-              <br>
-
-              <a href=#>
-              <input type="submit" value="View program details" style="float: right;">
-              </a>
-
-            </div>
-
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/Khan_Academy_Logo.jpg" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Khan Academy</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> SAT Prep </li>
+          </ul>
         </div>
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          It is a great website to practice for the SAT. There will be monthly practice tests and daily practice worksheets which could be very helpful.  
+        </p>
+        </br>
+        <a href= "https://www.khanacademy.org/sat">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/VarsityTutors_logo.JPG" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Varsity Tutors</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> SAT Prep </li>
+          </ul>
+        </div>
+        <h3><b> Price: Free </b></h3>
+        <p> 
+          Varsity Tutors offers free SAT Practice Tests for you to use in preparing for the SAT. Our free SAT Practice Tests are written by teachers, professors, content specialists, and tutors. There are Full-Length SAT Practice Tests available for each section of the test. Each of these complete practice tests can help you get a better idea of your current level of knowledge. 
+        </p>
+        </br>
+        <a href= "https://www.varsitytutors.com/sat-practice-tests">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/CollegeBoard_logo.png" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>College Board</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> SAT Prep </li>
+          </ul>
+        </div>
+        <h3><b> Price: Free </b></h3>
+        <p> 
+          CollegeBoard can greatly help you with SAT preparation through the various practice tests offered on the website. Learn more about the ins and outs of the SATs by viewing available test dates, registration tips, score interpretation, and more.
+        </p>
+        </br>
+        <a href= "https://collegereadiness.collegeboard.org/sat/practice">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/Logos/TPR.jpg" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Test Prep review.</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> SAT Prep </li>
+          </ul>
+        </div>
+        <h3><b> Price: Free </b></h3>
+        <p> 
+          Instead, of spending thousands of dollars just for doing practice tests you could use this website to get free SAT practice worksheets and spend the money on the actual SAT exam. 
+        </p>
+        </br>
+        <a href= "https://www.testprepreview.com/sat_practice.htm">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+    <!-- The end of SAT PREP -->
+
+    <!-- The start of ACT PREP -->
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/VarsityTutors_logo.JPG" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Varsity Tutors</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> ACT Prep </li>
+          </ul>
+      </div>
+        <h3><b> Price: Free </b></h3>
+        <p> 
+          Explore the Varsity Learning Tools free diagnostic tests for ACT to determine which academic concepts you understand and which ones require your ongoing attention. Each ACT problem is tagged down to the core, underlying concept that is being tested. The ACT diagnostic test results highlight how you performed on each area of the test. You can then utilize the results to create a personalized study plan that is based on your particular area of need.
+        </p>
+        </br>
+        <a href= "https://www.varsitytutors.com/act-practice-tests">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+
+    <div class = "program" id="actProgram1">
+      <div class="programParts"> 
+        <img src="Images/McGraw_Hill_logo.png" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>McGraw Hill</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> ACT Prep </li>
+          </ul>
+      </div>
+        <h3><b> Price: Free </b></h3>
+        <p> 
+          We want to help you succeed on the ACT. Here you'll find two complete online practice tests with explanations for every question. You'll also find problem-solving videos and other ACT preparation resources available from McGraw-Hill. We've put all of our proven expertise into making sure you're ready for this difficult exam.
+        </p>
+        </br>
+        <a href= "https://www.mhpracticeplus.com/act.php">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+    <!-- End of ACT PREP -->
+  </div>
+
+  <!-- AP Test Prep -->
+  <div class="testprepInfo" id="apInfo">
+    <h1> AP Test Prep </h1>
+    <div class = "program" id="apProgram1">
+      <div class="programParts"> 
+          <img src="Images/CollegeBoard_logo.png" alt="program" class="programPic" style="padding-bottom: 30px;"> 
+          </br>
+          <img src="Images/steps/step1.png" alt="program" style="width:300px; height:200px; margin-bottom: 15px; border-radius:15px; border: 2px solid #12a188"> 
+          </br>
+          <img src="Images/steps/step2.jpg" alt="program" style="width:300px; height:200px; margin-bottom: 15px; border-radius:15px; border: 2px solid #12a188">
+          </br>
+          <img src="Images/steps/step3.png" alt="program" style="width:300px; height:200px; border-radius:15px; border: 2px solid #12a188">
+
+      </div>
+      <div class="programParts">
+        <h2>College Board</h2>
+      <div class="labels">
+          <ul>
+            <li class="testType"> AP Prep </li>
+          </ul>
+      </div>
+        <h3><b> Price: Free </b></h3> 
+        <p>
+          The best resource to prep for AP Exams actually come from the College Board, themselves, as they are the ones creating these examinations. College Board provides daily videos which cover all the units and topics that may appear on the exam. 
+
+          The following section provides a step by step guide to get to this treasure chest.
+        </p>
+        </br></br></br></br></br></br>
+
+        <ul>
+          <li>Go to apstudent.collegeboard.org and sign into your account. If you have registered for the AP, you would see all your APs, in each gray and white box. The picture on the left is an example of what you may see. </li>
+          </br></br></br></br></br></br></br></br></br>
+          <li>Click on the 'AP Classroom' link, which is located on the upper right portion of the screen. This is an example of what you may see on your device. </li>
+          </br></br></br></br></br></br></br></br></br></br>
+          <li>You should be greeted with this screen! Congratulations, now you have access to all of the videos! </li>
+        </ul>
+        <!---
+        <p>
+          This provides a step by step guide to get to this treasure chest. 
+          <ul>
+            <li>
+              Go to apstudent.collegeboard.org and sign into your account. 
+              </br>
+              <img src="" alt=""> <!--- Put the first image 
+            </li>
+            <li>
+              If you have registered for the AP, you would see all your APs, in each gray and white box. This is an example of what you may see.
+            </li>
+            <li>
+              Click on AP Classroom, which is located on the far right. This is an example of what you may see.
+              </br>
+              <img src="" alt=""> <!--- Put the second image 
+            </li>
+            <li>
+              You should be greeted with this screen! Congrats, now you have access to all the videos!
+              </br>
+              <img src="" alt=""> <!--- Put the third image 
+            </li>
+          </ul>
+        </p>
+        --->
+        </br></br>
+        <a href="https://www.collegeboard.org"/>
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
 
     </div>
 
 
-
-  <div class="testprepInfo" id="apInfo">
-    <h1> AP Test Prep </h1>
+    <div class = "program" id="apProgram1">
+      <div class="programParts"> 
+          <img src="Images/Khan_Academy_Logo.jpg" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Khan Academy</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> AP Prep </li>
+          </ul>
+        </div>
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          Khan Academy is an amazing resource to use but only provides a few handfuls of full AP courses. Some of these include AP Chemistry, AP Biology, AP United States History, and AP Calculus BC. These videos would be a great way to get a headstart of the AP course you would be taking. 
+        </p>
+        </br>
+        <a href= "https://www.khanacademy.org/">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
 
     <div class = "program" id="apProgram1">
-
-            <div class="programParts"> 
-              <img src="Images/placeholder.png" alt="program" class="programPic"> 
-            </div>
-
-            <div class="programParts">
-              <h2>AP Review Program Name 1</h2>
-
-              <div class="labels">
-                    <ul>
-                      <li class="timezone"> Timezone </li>
-                      <li class="testType"> AP Prep </li>
-                    </ul>
-              </div>
-
-              <h3><b> Price: $X to $X </b></h3>
-              <h3><b> Duration: DD/MM to DD/MM </b></h3>  
-              <p> (Description of program) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-              <br>
-
-              <a href=#>
-              <input type="submit" value="View program details" style="float: right;">
-              </a>
-
-            </div>
-
+      <div class="programParts"> 
+          <img src="Images/fiveabe_logo.png" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>Fiveable.me</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> AP Prep </li>
+          </ul>
         </div>
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          Fiveable provides AP exam guides made by students, like you! As the AP exam draws in, Fiveable holds informative cram sessions of the entire curriculum that are low-cost. 
+        </p>
+        </br>
+        <a href= "https://fiveable.me/">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
 
-
-        <div class = "program" id="apProgram2">
-
-            <div class="programParts"> 
-              <img src="Images/placeholder.png" alt="program" class="programPic"> 
-            </div>
-
-            <div class="programParts">
-              <h2>AP Review Program Name 2</h2>
-
-              <div class="labels">
-                    <ul>
-                      <li class="timezone"> Timezone </li>
-                      <li class="testType"> AP Prep </li>
-                    </ul>
-              </div>
-
-              <h3><b> Price: $X to $X </b></h3>
-              <h3><b> Duration: DD/MM to DD/MM </b></h3>  
-              <p> (Description of program) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-              <br>
-
-              <a href=#>
-              <input type="submit" value="View program details" style="float: right;">
-              </a>
-
-            </div>
-
+    <div class = "program" id="apProgram1">
+      <div class="programParts"> 
+          <img src="Images/AP_Pracctice_logo.JPG" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>AP Practice Exams</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> AP Prep </li>
+          </ul>
         </div>
-
-        
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          In order to do well on every test, it is essential to do handfuls of practice exams. AP practice exams are exactly what the title says. This website provides numerous practice exams that would provide you the training to do well on your next AP exam.  
+        </p>
+        </br>
+        <a href= "https://www.appracticeexams.com/">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>
+    </div>
+    
   </div>
 
+  <!-- IB Exam Prep -->
   <div class="testprepInfo" id="ibInfo">
     <h1> IB Exam Prep </h1>
-
-      <div class = "program" id="ibProgram1">
-
-            <div class="programParts"> 
-              <img src="Images/placeholder.png" alt="program" class="programPic"> 
-            </div>
-
-            <div class="programParts">
-              <h2>IB Review Program Name 1</h2>
-
-              <div class="labels">
-                    <ul>
-                      <li class="timezone"> Timezone </li>
-                      <li class="testType"> IB Prep </li>
-                    </ul>
-              </div>
-
-              <h3><b> Price: $X to $X </b></h3>
-              <h3><b> Duration: DD/MM to DD/MM </b></h3>  
-              <p> (Description of program) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-              <br>
-
-              <a href=#>
-              <input type="submit" value="View program details" style="float: right;">
-              </a>
-
-            </div>
-
+    <div class = "program" id="apProgram1">
+      <div class="programParts"> 
+          <img src="Images/ibacademy.png" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>IB Academy</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> IB Prep </li>
+          </ul>
         </div>
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          IB Academy provides free study guides to students who take the IB exams. The subjects of these study guides range from Physics, to Mathematics to even Economics.  
+        </p>
+        </br>
+        <a href= "https://www.ib.academy/free-resources">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>      
+    </div>
 
-        <div class = "program" id="ibProgram2">
-
-            <div class="programParts"> 
-              <img src="Images/placeholder.png" alt="program" class="programPic"> 
-            </div>
-
-            <div class="programParts">
-              <h2>IB Review Program Name 2</h2>
-
-              <div class="labels">
-                    <ul>
-                      <li class="timezone"> Timezone </li>
-                      <li class="testType"> IB Prep </li>
-                    </ul>
-              </div>
-
-              <h3><b> Price: $X to $X </b></h3>
-              <h3><b> Duration: DD/MM to DD/MM </b></h3>  
-              <p> (Description of program) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-              <br>
-
-              <a href=#>
-              <input type="submit" value="View program details" style="float: right;">
-              </a>
-
-            </div>
-
+    <div class = "program" id="apProgram1">
+      <div class="programParts"> 
+          <img src="Images/IB_program_logo.jpg" alt="program" class="programPic"> 
+      </div>
+      <div class="programParts">
+        <h2>IB Resources</h2>
+        <div class="labels">
+          <ul>
+            <li class="testType"> IB Prep </li>
+          </ul>
         </div>
+        <h3><b> Price: Free </b></h3> 
+        <p> 
+          IB Resources provides resources for students for their IB exams. These resources are rated which allows students to know which resources would best help them! In action, past exams as well as textbooks are on this website which would provide both practice and supplementals when studying for the IB exam.  
+        </p>
+        </br>
+        <a href= "https://ibresources.org">
+        <input type="submit" value="View program details" style="float: right;">
+        </a>
+      </div>      
+    </div>
 
-  </div>
 
   </div>
   <div class = "footer">
     </br>
-    <h2 class = "website-title">Website Title</h2>
+    <h2 class = "website-title">Education.ly</h2>
     <p class = "pTag2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel arcu ac mi aliquet feugiat non nec augue. Cras interdum tempor dolor eget luctus. Vivamus tincidunt urna sit amet ligula por
+      Making college education more accessible to students all around the world, one click at a time! Feel free to contact us for any suggestions, comments, or inquiries about the site.
     </p>
     </br>
     <center>
@@ -309,5 +453,5 @@
     </center>
   </div>
 
-  </body>
-  </html>
+</body>
+</html>

@@ -24,7 +24,7 @@
 			<ul id="co">
         <li>
         <!-- Website's Logo -->
-			  <img src = "Images/placeholder.png" alt = "" class = "website-logo" style="height: 50px; width: 50px; ">
+			  <a href = "index.html"><img src = "Images/logo white.png" alt = "" class = "website-logo" style="height: 40px; width: 50px; "></a>
         </li>
 				<li id="link1">
           <a href="index.html" class = "home-link" id = "link"> Home </a>
@@ -46,6 +46,25 @@
         </li>
 			</ul>
 	</div>
+    <div class = "timezone">
+    <br>
+    <h1 class = "h1"> Time Zone Offset Convertor to GMT </h1>
+    <p class = "pTag3">
+      By using the timezone convertor below you are going to get the number of hours that you are either behind or forward the GMT timezone. Based on that number you can go to this <a href="timezoneList.html" class = "aTag">link</a> to check which timezone time you need. 
+    </p>
+    <p class = "pTag3"> Use the link given above to check the GMT timezone to IST time zone based on your GMT conversion you got above.</p>
+    <br>
+    <h3 class = "h3">Timezone offset</h3>
+    <p class = "pTag4">
+      Click on submit button to display timezone offset in minutes
+    </p>
+    <center>
+      <button onClick = "showOffset()" class = "time-btn">Convert</button>
+      <br>
+      <br>
+      <p id="time"></p>
+    </center>
+  </div>
 
 <!-- Filter Tab -->
     <div class="filtertab">
@@ -53,10 +72,13 @@
       <h2>Edit Preferences</h2>
       <h4>Time zone</h4>
         <input type="checkbox" id="time1" name="time1" value="time1" data-category="tz1">
-        <label for="time1" onclick="filterList('tz1')">Timezone 1</label>
+        <label for="time1" onclick="filterList('tz1')">IST (GMT +5:30)</label>
         <br>
         <input type="checkbox" id="time2" name="time2" value="time2" data-category="tz2">
-        <label for="time2" onclick="filterList('tz2')">Timezone 2</label>
+        <label for="time2" onclick="filterList('tz2')">MSK (GMT +3:00) </label>
+        <br>
+        <input type="checkbox" id="time3" name="time3" value="time3" data-category="tz3">
+        <label for="time3" onclick="filterList('tz3')">No specific timezone</label>
         <br>
 
       <h4>Field of interest</h4>
@@ -91,220 +113,303 @@
 
       </form>
     </div>
-
-<!-- Extracurricular Searcher -->
-    <h1 class="mainhead">Find opportunities for you!</h1>
-    <div class="selectType">
-      <ul>
-        <li> All </li>
-        <li> Internships/Jobs </li>
-        <li> Competitions </li>
-      </ul>
-    </div>
     
-    <div class = "eclist">
-
-  <!-- Internship extracurricular, timezone is MSK -->
-  <div class = "filter" id="ec1" data-category="msk">
-
-      <div class="ecContainer">
-
-        <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
-        </div>
-
-        <div>
-          <h1 class = "ecname">Luxoft</h1>
-
-            <h3><i class="bi bi-briefcase-fill"></i> Student mentor </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> Work at home </h3>
-          
-        </div>
-
+<div class = "body-part">
+      <!-- Extracurricular Searcher -->
+      <h1 class="mainhead">Find opportunities for you!</h1>
+      <div class="selectType">
+        <ul>
+          <li> All </li>
+          <li> Internships/Jobs </li>
+          <li> Competitions </li>
+        </ul>
       </div>
+      
+  <div class = "eclist">
 
-      <ul>
+    <!-- Internship extracurricular, timezone is MSK -->
+    <div class = "filter" id="ec1" data-category="msk">
+
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/luxoft.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname">Luxoft</h1>
+              <h3><i class="bi bi-briefcase-fill"></i> Work at home </h3>
+              <h3><i class="bi bi-clock-fill"></i> MSK </h3>
+          </div>
+        </div>
+        <ul>
           <li class="ecinfo">Work closely with Build and Release team to support, enhance, and expand company-wide build and deployment systems and infrastructure</li>
           <li class="ecinfo">Work with the users to troubleshoot and address issues for a variety of software and versions</li>
           <li class="ecinfo">Develop documentation and build tools to facilitate user experience</li>
-      </ul>
+        </ul>
+        <a href="https://career.luxoft.com/job/build-and-release-engineer/284551/?utm_source=linkedin-wrapping">
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+    </div>
 
-      <a href="https://career.luxoft.com/job/build-and-release-engineer/284551/?utm_source=linkedin-wrapping">
-      <input type="submit" value="Visit website" class="ecSubmit">
-      </a>
-
-  </div>
-
-  <!-- Internship extracurricular, timezone is IST-->
-  <div class = "filter" id="ec2" data-category="ist">
-
+    <!-- Internship extracurricular, timezone is IST-->
+    <div class = "filter" id="ec2" data-category="ist">
       <div class="ecContainer">
-
         <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+          <img src = "Images/Logos/AICTE.jpg" alt = "logo" class = "ecpic"/>
         </div>
-
         <div>
-          <h1 class = "ecname">All India Council for Technical Education</h1>
-
-            <h3><i class="bi bi-briefcase-fill"></i> Paid Intern </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> India </h3>
+          <h1 class = "ecname">AICTE (All India Council for Technical Education)</h1>
+          <h3><i class="bi bi-briefcase-fill"></i> Paid Intern </h3>
+          <h3><i class="bi bi-clock-fill"></i> IST </h3>
         </div>
-
       </div>
-
-      <ul>
-          <li class="ecinfo">Interning under National level council technical education with a broad range of potential interests: social justice and empowerment, aerospace, oil and gas, banks, corporate, etc. </li>
-      </ul>
-
+      <p>
+        Interning under National level council technical education with a broad range of potential interests: social justice and empowerment, aerospace, oil and gas, banks, corporate, etc. 
+      </p>
       <a href="https://internship.aicte-india.org/">
       <input type="submit" value="Visit website" class="ecSubmit">
       </a>
+    </div>
 
-  </div>
-
-
-  <!-- Internship extracurricular, timezone is IST-->
-  <div class = "filter" id="ec3" data-category="ist">
-
-    <div class="ecContainer">
-
+    <!-- Internship extracurricular, timezone is IST-->
+    <div class = "filter" id="ec3" data-category="ist">
+      <div class="ecContainer">
         <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+          <img src = "Images/Logos/TIAA.png" alt = "logo" class = "ecpic"/>
         </div>
-
         <div>
           <h1 class = "ecname">TIAA Global Business Services India</h1>
 
-            <h3><i class="bi bi-briefcase-fill"></i> Business Intern </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> Mumbai, India </h3>
+            <h3><i class="bi bi-briefcase-fill"> Business Intern</i></h3>
+            <h3><i class="bi bi-clock-fill"></i> IST </h3>
         </div>
-
       </div>
-
-      <ul>
-          <li class="ecinfo">Participates in and supports the operational activities of a TIAA business unit.</li>
-      </ul>
-
+      <p>Participates in and supports the operational activities of a TIAA business unit.</p>
       <a href="https://careers.tiaa.org/global/en/job/R210500235/Intern ">
       <input type="submit" value="Visit website" class="ecSubmit">
       </a>
-
     </div>
 
-
-    <!-- Internship extracurricular, unlabled timezone-->
-    <div class = "filter" id="ec4" data-category="insertTimezone">
-
-    <div class="ecContainer">
-
+    <!-- Internship extracurricular, all timezones-->
+    <div class = "filter" id="ec3" data-category="ist">
+      <div class="ecContainer">
         <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+          <img src = "Images/Logos/proj.jpg" alt = "logo" class = "ecpic"/>
         </div>
-
         <div>
-          <h1 class = "ecname">Intership Company Name 4</h1>
+          <h1 class = "ecname"> Project Inspire Volunteer </h1>
 
-            <h3><i class="bi bi-briefcase-fill"></i> Role </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> Location </h3>
+            <h3><i class="bi bi-briefcase-fill"> Volunteer </i></h3>
+            <h3><i class="bi bi-clock-fill"></i> No Specific Timezone </h3>
         </div>
-
       </div>
-
-      <ul>
-          <li class="ecinfo">(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-          <li class="ecinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-          <li class="ecinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-      </ul>
-
-      <a href="https://careers.tiaa.org/global/en/job/R210500235/Intern ">
+      <p>
+        We have two roles available for the summer: instructor and managerial positions. Workshops will be held once to twice a week for six weeks. Instructors can choose the time to hold their class.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiIYFh_FGEflvQ9yjz1TIUc2cqz-z7oXxe3Hcx2ZxLDSLX-A/viewform">
       <input type="submit" value="Visit website" class="ecSubmit">
       </a>
-
     </div>
 
-    <!-- Contest extracurricular, unlabled timezone-->
-    <div class = "filter" id="ec5" data-category="insertTimezone">
-
-    <div class="ecContainer">
-
+    <!-- Internship extracurricular, all timezones-->
+    <div class = "filter" id="ec3" data-category="ist">
+      <div class="ecContainer">
         <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+          <img src = "Images/Logos/Sportshi.png" alt = "logo" class = "ecpic"/>
         </div>
-
         <div>
-          <h1 class = "ecname">Contest 1</h1>
+          <h1 class = "ecname"> SportsHi Ambassador </h1>
 
-            <h3><i class="bi bi-calendar-fill"></i> Date/s of contest </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> Location</h3>
+            <h3><i class="bi bi-briefcase-fill"> Sports Ambassador </i></h3>
+            <h3><i class="bi bi-clock-fill"></i> No Specific Timezone </h3>
         </div>
-
       </div>
-      
-          <p>(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href=#>
+      <p>
+        Joining or starting a SportsHi Ambassador Chapter at your high school is perfect for you if you are interested in sports, technology, business, or simply engaging more with your community. You will gain critical business skills and real-world experience. 
+      </p>
+      <a href="https://www.sportshi.io/ambassadors">
       <input type="submit" value="Visit website" class="ecSubmit">
       </a>
-
     </div>
 
-    <!-- Contest extracurricular, unlabled timezone-->
-    <div class = "filter" id="ec6" data-category="insertTimezone">
+    <!-- Extracurricular Activites and Contests -->
 
-    <div class="ecContainer">
-
-        <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+    <!-- Contest extracurricular, IST timezone-->
+      <div class = "filter" id="ec5" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/artcade.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname">Artcade</h1>
+            <h3><i class="bi bi-calendar-fill"></i> IST time zone </h3>
+            <h3><i class="bi bi-brush-fill"></i> Art </h3>
+          </div>
         </div>
-
-        <div>
-          <h1 class = "ecname">Contest 2</h1>
-
-            <h3><i class="bi bi-calendar-fill"></i> Date/s of contest </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> Location</h3>
-        </div>
-
+        <p>
+          Send in drawings, painting, comics, memes, stickers and even comic strips. The theme for the competitions is Digital Citizenship and Online Safety. You may choose any topic related to this, such as privacy, safety, trolling, security tips, online fraud, bullying, phishing, vishing, malware etc.
+        </p>
+        <a href="https://www.eraksha.net/artcade/"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
       </div>
 
-          <p>(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href=#>
-      <input type="submit" value="Visit website" class="ecSubmit">
-      </a>
-
-    </div>
-
-
-    <!-- Contest extracurricular, unlabled timezone-->
-    <div class = "filter" id="ec7" data-category="insertTimezone">
-
-    <div class="ecContainer">
-
-        <div>
-          <img src = "Images/placeholder.png" alt = "logo" class = "ecpic"/>
+      <!-- Contest extracurricular, IST timezone -->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/Worldhack.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname"> World Hack </h1>
+            <h3><i class="bi bi-calendar-fill"></i> IST time zone </h3>
+            <h3><i class="bi bi-pencil-fill"></i> Writing, English </h3>
+          </div>
         </div>
-
-        <div>
-          <h1 class = "ecname">Contest 3</h1>
-
-            <h3><i class="bi bi-calendar-fill"></i> Date/s of contest </h3>
-            <h3><i class="bi bi-geo-alt-fill"></i> Location</h3>
-        </div>
-
+        <p>
+          You can send in short stories (only for Category 1, refer to guidelines), essays (only for Category 1, refer to guidelines), articles, blogs and research papers (for Categories 2 &3). The theme for the competitions is Digital Citizenship and Online Safety. You may choose any topic related to this, such as privacy issues, safety, trolling, security tips, online fraud, bullying, phishing, vishing, malware, etc
+        </p>
+        <a href="https://www.eraksha.net/word-hack/"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
       </div>
 
-          <p>(details about this activity)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href=#>
-      <input type="submit" value="Visit website" class="ecSubmit">
-      </a>
+      <!-- Contest extracurricular, IST timezone-->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/screen.png" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname">Screen Maters</h1>
+            <h3><i class="bi bi-calendar-fill"></i> IST time zone </h3>
+            <h3><i class="bi bi-brush-fill"></i> Arts and Humanities </h3>
+          </div>
+        </div>
+        <p>
+          Let out the director in you and create an original video in the form of a short movies/awareness videos/ songs/ satires/ parodies/ documentaries and interviews with a strong message (aligning with the theme of the competition – Digital Citizenship & Online Safety) that would last forever in the minds of those who watch it. 
+        </p>
+        <a href=""> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+      </div>
 
+      <!-- Contest extracurricular, IST timezone-->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/cyberpeace.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname">Cyber Peace Honours</h1>
+            <h3><i class="bi bi-calendar-fill"></i> IST time zone </h3>
+            <h3><i class="bi bi-cpu-fill"></i> Technology: Cybersecurity </h3>
+          </div>
+        </div>
+        <p>
+          The Cyber Peace Honors is an award conferred on individuals who have consistently worked on online safety and cyber security to facilitate a peaceful, resilient and inclusive cyberspace for all.  
+        </p>
+        <a href="https://www.eraksha.net/cyber-peace-honours/"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+      </div>
+
+      <!-- Contest extracurricular, IST timezone-->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/techavishkar.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname">Tech Avishkar</h1>
+            <h3><i class="bi bi-calendar-fill"></i> IST time zone </h3>
+            <h3><i class="bi bi-cpu-fill"></i> Technology: Cybersecurity </h3>
+          </div>
+        </div>
+        <ul>
+          <li>Software* (Mobile apps/Web app /Source Coding)</li>
+          <li>Hardware** (Innovative Device/Module Development )</li>
+          <li>Firmware*** (Software Controlled Devices, Appliances, etc.)</li>
+        </ul>
+        <p>
+            The theme for the competitions is Digital Citizenship and Online Safety. Your innovation must address a problem faced in cyberspace, such as privacy issues, safety, trolling, online fraud, bullying, phishing, vishing, malware, etc.
+        </p>
+        <a href="https://www.eraksha.net/tech-avishkar/"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+      </div>
+
+      <!-- Contest extracurricular, all timezone-->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/USAD.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname"> USAD International Program </h1>
+            <h3><i class="bi bi-calendar-fill"></i> No Specific timezone </h3>
+            <h3><i class="bi bi-book-half"></i> Scholastic Competition </h3>
+          </div>
+        </div>
+            <p>
+              International teams from all over the world are invited to participate in the United States Academic Decathlon(USAD). Students form a team, join the USAD International Program and prepare to compete!
+            </p>
+        <a href="https://www.usad.org/competitions/International.aspx"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+      </div>
+
+      <!-- Contest extracurricular, all timezone-->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/gocorona.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname"> GO CORONA 2021 </h1>
+            <h3><i class="bi bi-calendar-fill"></i> No specific timezone </h3>
+            <h3><i class="bi bi-brush-fill"></i> Art Competition </h3>
+          </div>
+        </div>
+        <ul>
+          <li>5 to 7 years - Lockdown transforms houses into homes</li>
+          <li>8 to 10 years - A triumphant Salute to the Frontline Professionals</li>
+          <li>11 to 13 years - Imagine!! What if COVID Outbreak occurred centuries ago.</li>
+          <li>14 to 15 years - Realize…Repent…React </li>
+        </ul>
+        <a href="https://events.velammalonline.com/events_instruction/gocorona_2021.php"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+      </div>
+
+      <!-- Contest extracurricular, all timezone-->
+      <div class = "filter" id="ec6" data-category="insertTimezone">
+        <div class="ecContainer">
+          <div>
+            <img src = "Images/Logos/conrad.jpg" alt = "logo" class = "ecpic"/>
+          </div>
+          <div>
+            <h1 class = "ecname"> Conrad Challenge </h1>
+            <h3><i class="bi bi-calendar-fill"></i> No Specific timezone </h3>
+            <h3><i class="bi bi-cpu-fill"></i> Technology, Science </h3>
+          </div>
+        </div>
+        <p>
+          Participants work together to identify challenges and develop solutions to some of the world’s most complex problems in any of the following categories: Aerospace & Aviation, Cyber-Technology & Security, Energy & Environment, Health & Nutrition, the Foundation for a Smoke-Free World with 2 special categories, and Oceans: The Plastic Problem. Teams may submit in multiple categories, if desired. 
+        </p>
+        <a href="https://www.conradchallenge.org/conrad-challenge"> 
+        <input type="submit" value="Visit website" class="ecSubmit">
+        </a>
+      </div>
+
+      <!-- The End -->
+      </div>
     </div>
 
-     </div> 
      <div class = "footer">
     </br>
-    <h2 class = "website-title">Website Title</h2>
+    <h2 class = "website-title">Education.ly</h2>
     <p class = "pTag2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel arcu ac mi aliquet feugiat non nec augue. Cras interdum tempor dolor eget luctus. Vivamus tincidunt urna sit amet ligula por
+      Making college education more accessible to students all around the world, one click at a time! Feel free to contact us for any suggestions, comments, or inquiries about the site.
     </p>
     </br>
     <center>
@@ -327,5 +432,17 @@
       </div>
     </center>
   </div>
+  <script>
+    function showOffset() {
+      // Date object
+      var date = new Date();
+        
+      // Offset variable will store 
+      // timezone offset between 
+      // UTC and your local time   
+      var offset = date.getTimezoneOffset()/60;
+      document.getElementById("time").innerHTML = "Timezone offset: " + offset + " hours";
+    }  
+  </script>
   </body>
 </html>

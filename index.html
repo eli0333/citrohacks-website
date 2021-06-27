@@ -8,21 +8,24 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Google Icons CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 	<!-- Google Fonts CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
 </head>
 
-<body>
+<body onload = askName()>
 	<script src="script.js">
+
 	</script>
 
-	<div class="header">
+	<div class="header-home">
 		<br>
       <!-- Navigation Bar -->
 			<ul id="co">
         <li>
         <!-- Website's Logo -->
-			  <img src = "Images/placeholder.png" alt = "" class = "website-logo" style="height: 50px; width: 50px; ">
+			  <a href = "index.html"><img src = "Images/logo white.png" alt = "" class = "website-logo" style="height: 40px; width: 50px; "></a>
         </li>
 				<li id="link1">
           <a href="index.html" class = "home-link" id = "link"> Home </a>
@@ -46,12 +49,12 @@
       </br>
       <div> 
         <p class = "pTag2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel arcu ac mi aliquet feugiat non nec augue. Cras interdum tempor dolor eget luctus. Vivamus tincidunt urna sit amet ligula por
+          Education.ly is the place where all international students can find a vast collection of opportunities to simplify their college admission experience. Sign up for a free account today!
         </p>
         </br>
         <center>
-          <a href="" class = "login-btn">Sign Up</a>
-          <a href="" class = "sign-up-btn">Login</a>
+          <a href="https://swifthorse14.qoom.space/~/SignupForm" class = "sign-up-btn">Sign Up</a>
+          <a href="https://swifthorse14.qoom.space/~/LoginPage" class = "login-btn">Login</a>
         </center>
       </div>
 	</div>
@@ -61,12 +64,15 @@
     <!-- The Place where we should the user's stats -->
     <div class="dashboardContainer">
       <div>
-        <img src = "Images/placeholder.png" alt = "profile" class = "profilepic"/>
+        <img src = "Images/profilepic.png" alt = "profile" class = "profilepic"/>
       </div>
       <div>
-        <h1 class = "profilename">Welcome, (User Name)!</h1>
+        <h1 class = "profilename" id="username">Welcome, New User!</h1>
       </div>
     </div>
+    </br>
+    
+  <div class="aligner">
     <div class="userDetails">
       <div class = "profCard">
         <h1 class="statnum" style="font-size: 50px; color: #FF96AD;">14</h1>
@@ -84,27 +90,46 @@
         <p> Signed up for 30+ hours of college exam review programs</p>
       </div>
     </div>
+    </div>
   </div>
-
+  
   <div class = "information">
     </br>
     <!-- The statistics and the domestics about the world's learning and things -->
     <h1 class = "h1"> Statistics  </h1>
-    <p></p>
 
+    <div class="aligner" style ="margin-right:25px">
+      <div class="statGroup">
+        <div class = "statCard">
+          <i class="material-icons-outlined" style="font-size: 100px">groups</i>
+              <p>The average of the acceptance rate of Ivy League schools is approximately 7%. However, for international students, it is only about <b>5%</b>.</p> 
+        </div>
+        <div class = "statCard">
+          <i class="material-icons-outlined" style="font-size: 100px">account_balance</i>
+              <p>Out of the twenty top universities nationally, <b>fourteen</b> of them are universities located in the United States.</p> 
+        </div>
+        <div class = "statCard">
+          <i class="material-icons-outlined" style="font-size: 100px">school</i>
+              <p><b>32.1%</b> of Americans 25 years and older hold at least a bachelor’s degree. There has been a trend of an increase of five percent every fifteen years.</p> 
+        </div>
+      </div>
+    </div>
+    
+
+
+    </br></br>
+    <hr style="color: black; width:80%; margin: 0 auto;">
     <!-- The mission that we have that we are solving using this website -->
     <h1 class = "h1"> Our Mission </h1>
-    <p></p>
-    
+    <p class = "pTag3" style="line-height: 2; text-align: center;">
+      As the college admissions process is hard for even domestic students of the United States, we hope to lend a hand to international students around the world by providing them a platform which would help them easily discover convenient and available opportunities ranging from extracurriculars, scholarships, test prep, and so much more.
+    </p>
   </div>
-
-
-
   <div class = "footer">
     </br>
-    <h2 class = "website-title">Website Title</h2>
+    <h2 class = "website-title">Education.ly</h2>
     <p class = "pTag2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel arcu ac mi aliquet feugiat non nec augue. Cras interdum tempor dolor eget luctus. Vivamus tincidunt urna sit amet ligula por
+      Making college education more accessible to students all around the world, one click at a time! Feel free to contact us for any suggestions, comments, or inquiries about the site.
     </p>
     </br>
     <center>
@@ -127,5 +152,17 @@
       </div>
     </center>
   </div>
+
+  <script>
+    function askName() {
+      var userName = prompt("Welcome to Education.ly! Please enter your name to continue:", "");
+      if (userName != null) {
+        document.getElementById("username").innerHTML =
+        "Welcome, " + userName + "!";
+      }
+    }
+  </script>
+
+
   </body>
 </html>

@@ -3,7 +3,6 @@
 
 //source of instructional code: https://stackoverflow.com/questions/46323872/how-to-filter-multiple-elements-items
 
-
 // If we save our current state somewhere, we can easily filter the divs.
 var checkedCategories = ["msk", "irst", "irdt", "ist", "kgt", "krat"];
 // We need a function that detects the click on a checkbox and adds/removes that category.
